@@ -32,7 +32,7 @@ export default function Quiz(props) {
       <p className="mb-2 text-lg font-medium text-indigo-900">
         {results.question}
       </p>
-      <ul className="flex flex-row gap-2">
+      <ul className="sm:flex sm:flex-row sm:gap-2 flex flex-wrap gap-4">
         {results.options.map((option, optionIndex) => (
           <li
             onClick={() => handleUserPick(questionIndex, optionIndex)}
@@ -111,14 +111,14 @@ export default function Quiz(props) {
     : false;
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mx-10">
       <div>
         {!phase ? testElements : checkedElements}
         <div className="flex justify-center">
           <button
             disabled={disabled}
             onClick={!phase ? handlePhase : props.onClick}
-            className={`mt-4 rounded-2xl bg-indigo-700 text-white py-4 lg:px-12 sm:px-40 mx-auto my-auto ${
+            className={` mt-4 rounded-2xl bg-indigo-700 text-white py-4 lg:px-12 sm:px-40 px-20 mx-auto my-auto ${
               disabled ? "opacity-50" : ""
             }`}
           >

@@ -14,8 +14,8 @@ export default function App() {
 
   return (
     <div className="h-full relative">
-      <BlobsTop className="absolute top-0 right-0 lg:w-96 lg:h-96" />
-      <BlobsBottom className="absolute bottom-0 lg:w-96 lg:h-96" />
+      <BlobsTop className="absolute top-0 right-0 lg:w-72 lg:h-auto" />
+      <BlobsBottom className="absolute bottom-0 lg:w-72 lg:h-auto" />
       <div className="h-full flex items-center justify-center">
         {quiz ? <Quiz onClick={handleStart} /> : <Begin start={handleStart} />}
       </div>

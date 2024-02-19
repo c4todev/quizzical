@@ -7,11 +7,8 @@ export default function Begin(props) {
       <h2 className="tracking-wider text-4xl font-bold text-indigo-900">
         Quizzical
       </h2>
-      <p className="text-base pt-2 text-indigo-900 font-normal">
-        Some description if needed
-      </p>
       <button
-        className="mt-8 rounded-2xl bg-indigo-700 text-white py-4 lg:px-12 sm:px-40"
+        className="mt-8 rounded-2xl bg-indigo-700 text-white py-4 lg:px-12 sm:px-40 px-40"
         onClick={props.start}
       >
         Start quiz
